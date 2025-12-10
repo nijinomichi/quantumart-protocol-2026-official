@@ -42,7 +42,7 @@ All future apps (Quantum Shogi, BananaSpace modules, etc.) are expected to
 
 > **Quantum Shogi — Quantum-for-All, peace-oriented art game**
 
-- MVP design: [Quantum Shogi Notion page](https://energetic-trilby-74a.notion.site/Quantum-Shogi-MVP-Design-Core-2c34068e0788801abc2bd7b38bec4baa)  
+MVP design: https://www.notion.so/Quantum-Shogi-MVP-Developer-Brief-v1-0-2c54068e07888056b4d8f47da3c1c150
 - IYQ2025 alignment: multi-sensory, multicultural, accessibility-first  
 - Physics core: Born rule, superposition, entanglement (Balmer/Born bridge)
 
@@ -74,7 +74,8 @@ This repository is released under the **MIT License**
 
 ## Contact
 
-- GitHub: [@nijinomichi](https://github.com/nijinomichi)  
+- GitHub: [@nijinomichi]
+- nijinomichi@protonmail.com
 - Project tag: **WaWaWa × QuantumArt × IYQ2025**
 
 > *Impossible is nothing, when we resonate together.* 🕊️🍌
