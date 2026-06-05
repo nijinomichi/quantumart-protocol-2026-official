@@ -1,0 +1,182 @@
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont
+import math, random
+
+out_dir = Path("/mnt/data")
+svg_path = out_dir / "WaWaWa_Shadow_001_IYQ2025.svg"
+png_path = out_dir / "WaWaWa_Shadow_001_IYQ2025_preview.png"
+
+W, H = 1080, 1080
+
+svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+<title id="title">WaWaWa Resonance — Shadow #001</title>
+<desc id="desc">A low-resolution shadow artwork for IYQ2025 co-creation: a table-tennis serve becomes an interference field, watermarked to protect the dream rather than hide truth.</desc>
+
+<defs>
+  <radialGradient id="darkMatter" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#24193f"/>
+    <stop offset="45%" stop-color="#101827"/>
+    <stop offset="100%" stop-color="#02040a"/>
+  </radialGradient>
+  <linearGradient id="serveTrail" x1="6%" y1="82%" x2="94%" y2="18%">
+    <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.05"/>
+    <stop offset="35%" stop-color="#FFD54F" stop-opacity="0.68"/>
+    <stop offset="70%" stop-color="#FF6B6B" stop-opacity="0.42"/>
+    <stop offset="100%" stop-color="#B388FF" stop-opacity="0.08"/>
+  </linearGradient>
+  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="watermarkPattern" width="260" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+    <text x="0" y="72" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.055" letter-spacing="2">WaWaWa-Shadow #001</text>
+    <text x="0" y="110" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFD54F" fill-opacity="0.045" letter-spacing="1.5">RadicanTrust™ / IYQ2025</text>
+  </pattern>
+</defs>
+
+<rect width="1080" height="1080" fill="url(#darkMatter)"/>
+<rect width="1080" height="1080" fill="url(#watermarkPattern)"/>
+
+<g opacity="0.55">
+  <line x1="110" y1="720" x2="970" y2="720" stroke="#7df9ff" stroke-opacity="0.25" stroke-width="2"/>
+  <line x1="220" y1="820" x2="860" y2="820" stroke="#FFD54F" stroke-opacity="0.20" stroke-width="2"/>
+  <path d="M110 720 L220 820 L860 820 L970 720 Z" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.11"/>
+  <line x1="540" y1="720" x2="540" y2="820" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+</g>
+
+<path d="M180 815 C320 590, 430 430, 545 530 C650 625, 725 370, 895 245" fill="none" stroke="url(#serveTrail)" stroke-width="18" stroke-linecap="round" filter="url(#softGlow)" opacity="0.92"/>
+<path d="M180 815 C320 590, 430 430, 545 530 C650 625, 725 370, 895 245" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="4 18" stroke-linecap="round" opacity="0.55"/>
+
+<circle cx="895" cy="245" r="34" fill="#FFD54F" fill-opacity="0.88" filter="url(#softGlow)"/>
+<circle cx="895" cy="245" r="50" fill="none" stroke="#FFD54F" stroke-opacity="0.40" stroke-width="2" stroke-dasharray="7 9"/>
+<circle cx="895" cy="245" r="76" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+
+<!-- interference field, based on Q(x)=Σψᵢ(x)e^{iφᵢ}; decorative, not physics claim -->
+<g fill="none" stroke-linecap="round">
+'''
+
+random.seed(1001)
+for i in range(52):
+    cx = 540 + math.cos(i*0.73)*random.uniform(20, 160)
+    cy = 535 + math.sin(i*0.61)*random.uniform(10, 140)
+    r = 80 + i*11
+    opacity = max(0.012, 0.10 - i*0.0015)
+    color = "#7DF9FF" if i % 3 == 0 else ("#FFD54F" if i % 3 == 1 else "#FF6B6B")
+    svg += f'  <circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}" stroke="{color}" stroke-opacity="{opacity:.3f}" stroke-width="1.1"/>\n'
+
+svg += '''</g>
+<path d="M540 540 m -8 0 a 8 8 0 1 0 16 0 a 20 20 0 1 0 -40 0 a 52 52 0 1 0 104 0 a 136 136 0 1 0 -272 0 a 356 356 0 1 0 712 0" fill="none" stroke="#FFD54F" stroke-opacity="0.20" stroke-width="2"/>
+<g opacity="0.55">
+'''
+
+for i in range(140):
+    x = random.uniform(60, 1020)
+    y = random.uniform(70, 980)
+    r = random.uniform(0.8, 2.4)
+    op = random.uniform(0.04, 0.20)
+    color = "#ffffff" if random.random() < 0.65 else "#FFD54F"
+    svg += f'  <circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" fill="{color}" fill-opacity="{op:.3f}"/>\n'
+
+svg += '''</g>
+<g>
+  <text x="64" y="95" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" fill-opacity="0.92">WaWaWa Resonance — Shadow #001</text>
+  <text x="64" y="132" font-family="Georgia, serif" font-size="20" fill="#FFD54F" fill-opacity="0.86">To forgive is to innovate — and to watermark the dream.</text>
+</g>
+<g>
+  <rect x="64" y="914" width="952" height="98" rx="22" fill="#000000" fill-opacity="0.26" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="540" y="958" text-anchor="middle" font-family="Hiragino Mincho ProN, Yu Mincho, serif" font-size="25" fill="#ffffff" fill-opacity="0.94">影は真実を隠すのではなく、真実を守り抜く方法である</text>
+  <text x="540" y="990" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#FFD54F" fill-opacity="0.74" letter-spacing="1.4">Q(x)=Σψᵢ(x)e^{iφᵢ} / non-commutative prompt serve / RadicanTrust™</text>
+</g>
+<g transform="translate(842 888)" opacity="0.74">
+  <circle cx="72" cy="72" r="62" fill="none" stroke="#FFD54F" stroke-opacity="0.42" stroke-width="2"/>
+  <text x="72" y="64" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#FFD54F" fill-opacity="0.80">WaWaWa</text>
+  <text x="72" y="83" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#ffffff" fill-opacity="0.62">SHADOW</text>
+  <text x="72" y="101" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#ffffff" fill-opacity="0.50">IYQ2025</text>
+</g>
+</svg>
+'''
+
+svg_path.write_text(svg, encoding="utf-8")
+
+# PNG preview
+img = Image.new("RGB", (W, H), (3, 6, 13))
+draw = ImageDraw.Draw(img, "RGBA")
+
+for y in range(H):
+    t = y / H
+    r = int(2 + 30*(1-t) + 7*math.sin(t*math.pi))
+    g = int(4 + 25*(1-t))
+    b = int(10 + 45*(1-t))
+    draw.line([(0,y),(W,y)], fill=(r,g,b,255))
+
+for rad in range(760, 0, -8):
+    alpha = int(22 * (1 - rad/760))
+    draw.ellipse((540-rad, 470-rad, 540+rad, 470+rad), outline=(80,50,130,alpha), width=7)
+
+draw.line((110,720,970,720), fill=(125,249,255,70), width=2)
+draw.line((220,820,860,820), fill=(255,213,79,65), width=2)
+draw.polygon([(110,720),(220,820),(860,820),(970,720)], outline=(255,255,255,40), fill=(255,255,255,7))
+draw.line((540,720,540,820), fill=(255,255,255,40), width=2)
+
+def bezier(p0,p1,p2,p3,n=240):
+    pts=[]
+    for i in range(n+1):
+        t=i/n
+        x=(1-t)**3*p0[0]+3*(1-t)**2*t*p1[0]+3*(1-t)*t**2*p2[0]+t**3*p3[0]
+        y=(1-t)**3*p0[1]+3*(1-t)**2*t*p1[1]+3*(1-t)*t**2*p2[1]+t**3*p3[1]
+        pts.append((x,y))
+    return pts
+
+pts = bezier((180,815),(320,590),(430,430),(545,530),120)[:-1] + bezier((545,530),(650,625),(725,370),(895,245),120)
+for width, alpha in [(26,45),(16,120),(4,210)]:
+    draw.line(pts, fill=(255,213,79,alpha), width=width, joint="curve")
+draw.line(pts, fill=(255,255,255,115), width=2)
+
+for rr, alpha in [(90,15),(62,30),(42,70)]:
+    draw.ellipse((895-rr,245-rr,895+rr,245+rr), outline=(255,213,79,alpha), width=3)
+draw.ellipse((861,211,929,279), fill=(255,213,79,225))
+
+random.seed(1001)
+for i in range(52):
+    cx = 540 + math.cos(i*0.73)*random.uniform(20, 160)
+    cy = 535 + math.sin(i*0.61)*random.uniform(10, 140)
+    r = 80 + i*11
+    op = int(max(7, 30 - i*0.25))
+    col = (125,249,255,op) if i%3==0 else ((255,213,79,op) if i%3==1 else (255,107,107,op))
+    draw.ellipse((cx-r,cy-r,cx+r,cy+r), outline=col, width=1)
+
+for i in range(140):
+    x = random.uniform(60, 1020); y=random.uniform(70,980); rr=random.uniform(1,2.5)
+    op=random.randint(18,60)
+    col=(255,255,255,op) if random.random()<0.65 else (255,213,79,op)
+    draw.ellipse((x-rr,y-rr,x+rr,y+rr), fill=col)
+
+try:
+    font_big = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 31)
+    font_med = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 22)
+    font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 14)
+except:
+    font_big = font_med = font_small = ImageFont.load_default()
+
+for y in range(-50, H, 160):
+    for x in range(-80, W, 260):
+        draw.text((x,y+72), "WaWaWa-Shadow #001", fill=(255,255,255,18), font=font_small)
+
+draw.text((64,82), "WaWaWa Resonance — Shadow #001", fill=(255,255,255,235), font=font_big)
+draw.text((64,124), "To forgive is to innovate — and to watermark the dream.", fill=(255,213,79,220), font=font_med)
+
+draw.rounded_rectangle((64,914,1016,1012), radius=22, fill=(0,0,0,80), outline=(255,255,255,30), width=1)
+statement = "影は真実を隠すのではなく、真実を守り抜く方法である"
+jp_font = font_med
+for fp in ["/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc", "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc", "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc"]:
+    if Path(fp).exists():
+        jp_font = ImageFont.truetype(fp, 25)
+        break
+bbox = draw.textbbox((0,0), statement, font=jp_font)
+draw.text(((W-(bbox[2]-bbox[0]))/2, 950), statement, fill=(255,255,255,240), font=jp_font)
+sub = "Q(x)=Σψᵢ(x)e^{iφᵢ} / RadicanTrust™ / IYQ2025"
+bbox = draw.textbbox((0,0), sub, font=font_small)
+draw.text(((W-(bbox[2]-bbox[0]))/2, 988), sub, fill=(255,213,79,190), font=font_small)
+
+img.save(png_path, quality=92)
+print(f"Created:\n- {svg_path}\n- {png_path}")
