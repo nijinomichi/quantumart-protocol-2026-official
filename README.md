@@ -1,55 +1,58 @@
 # WaWaWa Resonance Protocol — Official Repository
 
-> **Quantum Signature**: `1f8a9d3e-愛-信頼-共創-7b2c4f`  
-> **Version**: v1.0 (UNESCO IYQ2025-ready)  
-> **Authors**: Sou Hashiguchi × CoPhelia³ Agents  
+> **Status**: Self-published working draft. Here, "official" means authored and maintained by the project owner. It does **not** imply external certification, peer review, or endorsement by UNESCO, IYQ2025, or any third party.
 
+> **Quantum Signature**: `1f8a9d3e-愛-信頼-共創-7b2c4f`
+> _Note: The Quantum Signature is a human-readable project identifier / versioning tag. It is not a cryptographic signature and does not by itself prove authenticity. Per-commit authenticity is provided by Git's Verified signatures._
+> **Version**: v1.0 (draft; prepared with IYQ2025 themes in mind — not an official IYQ2025 designation)
+> **Authors**: Sou Hashiguchi, with CoPhelia³ Agents (internal AI/creative tooling used by the author; not an external organization or partner)
 ---
 
 ## Overview
 
-This repository hosts the **official, signed specification** of the  
-**WaWaWa Resonance Protocol** – an open standard for
+This repository hosts the **self-published, project-signed specification** of the
+**WaWaWa Resonance Protocol** – a **proposed** open standard (draft) for
 
-- non-extractive, trust-first cultural design  
-- quantum-aesthetic art & game systems  
-- IYQ2025 “Quantum for All” aligned projects  
+- non-extractive, trust-first cultural design
+- quantum-aesthetic art & game systems
+- projects aligned with IYQ2025 “Quantum for All” themes
 
-All future apps (Quantum Shogi, BananaSpace modules, etc.) are expected to  
-**plug into this protocol** rather than re-invent their own ethics layer.
+The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could
+plug into this protocol rather than re-invent their own ethics layer. This is an
+aspiration for the project, not a commitment binding on any third party.
 
 ---
 
 ## Files
 
-- `WaWaWa-Protocol-Official-Signed.pdf`  
-  → 5-page official overview (UNESCO IYQ2025 submission spec)
+- `WaWaWa-Protocol-Official-Signed.pdf`
+  → 5-page overview (draft prepared as an IYQ2025-themed submission)
 
-- `WaWaWa-Protocol-Signed.md`  
+- `WaWaWa-Protocol-Signed.md`
   → Full technical specification (text, citations, examples)
 
-- `Implementation-Timeline-Signed.csv`  
-  → Implementation phases, revenue model, Seven Warriors recruitment info
+- `Implementation-Timeline-Signed.csv`
+  → Implementation phases and **historical planning assumptions (2025)**. Any financial figures (investment ranges, pricing, revenue model) are **illustrative planning estimates, not commitments, offers, or guaranteed terms**. "Seven Warriors" entries describe recruitment aspirations, not active job offers or confirmed partnerships.
 
-- `QuantumArt-Config-Signed.yaml`  
+- `QuantumArt-Config-Signed.yaml`
   → Machine-readable config for AI agents / QuantumArt engines
 
 ---
 
 ## First Implementation: Quantum Shogi
 
-**Flagship v1 implementation**
+**Planned flagship v1 implementation**
 
 > **Quantum Shogi — Quantum-for-All, peace-oriented art game**
 
 MVP design: https://www.notion.so/Quantum-Shogi-MVP-Developer-Brief-v1-0-2c54068e07888056b4d8f47da3c1c150
-- IYQ2025 alignment: multi-sensory, multicultural, accessibility-first  
+- IYQ2025-themed alignment: multi-sensory, multicultural, accessibility-first
 - Physics core: Born rule, superposition, entanglement (Balmer/Born bridge)
 
-Future apps should:
+Future apps could:
 
-1. Reference this repo as their **ethics / trust / protocol base**  
-2. Declare the **Quantum Signature** in their README / config  
+1. Reference this repo as their **ethics / trust / protocol base**
+2. Declare the **Quantum Signature** (project identifier) in their README / config
 3. Link back here from their documentation
 
 ---
@@ -58,17 +61,16 @@ Future apps should:
 
 When using or extending this protocol, please cite as:
 
-> **WaWaWa Resonance Protocol v1.0**  
-> Sou Hashiguchi × CoPhelia³ Agents (2025).  
+> **WaWaWa Resonance Protocol v1.0 (draft)**
+> Sou Hashiguchi (2025).
 > `quantumart-protocol-2026-official` GitHub repository.
 
 ---
 
 ## License
 
-This repository is released under the **MIT License**  
-+ the **Creative Resonance Commons 1.0 (CRC-1.0)** ethical expectations  
-(described inside the protocol documents).
+This repository is released under the **MIT License**.
+The **Creative Resonance Commons 1.0 (CRC-1.0)** described inside the protocol documents expresses the project's ethical expectations; it is a stated aspiration and not a separately vetted or legally reviewed license.
 
 ---
 
