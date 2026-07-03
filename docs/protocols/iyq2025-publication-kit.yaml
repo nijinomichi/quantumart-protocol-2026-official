@@ -1,0 +1,136 @@
+---
+title: "IYQ2025 Preparation — CoPhelia³ GitHub Publication Kit"
+version: "v1.0"
+date: "2026-06-27"
+authors:
+  - "So Hashiguchi (HashiguchiSo)"
+type: "technical-spec"
+ethics_level: "high"
+sensitivity_scope: "public-art-research"
+languages: ["ja", "en"]
+---
+
+IYQ2025_preparation:
+  objective:
+    - "Organize CoPhelia³ into an internationally readable GitHub repository spanning thought, research, and art."
+    - "Separate README, statement, and metadata as distinct artifacts with clear roles."
+    - "Preserve mystery while translating the project into research, art, and HCI contexts without pseudo-scientific claims."
+
+  deliverables:
+    - file: "README.md"
+      role: "Entry point: minimal, poetic, and internationally readable."
+    - file: "statement.md"
+      role: "IYQ2025-facing statement in calm sacred futurism, 600–1200 words."
+    - file: "52perspectives_metadata.yaml"
+      role: "Index for 52 resonance fragments as a weekly or serial body of work."
+
+README_md:
+  role: "entry"
+  tone:
+    - "poetic"
+    - "minimal"
+    - "internationally_readable"
+  recommended_structure:
+    sections:
+      - "title"
+      - "short_manifesto"
+      - "concept"
+      - "core_values"
+      - "research_fields"
+      - "project_structure"
+      - "philosophy"
+      - "disclaimer"
+      - "invitation"
+
+statement_md:
+  role: "IYQ2025-facing statement"
+  tone:
+    - "sacred_futurism"
+    - "apple_clean"
+    - "calm"
+  recommended_length:
+    words_min: 600
+    words_max: 1200
+  structure:
+    - "opening_image"
+    - "problem_statement"
+    - "human_ai_relationship"
+    - "poetic_interface"
+    - "future_vision"
+    - "closing"
+
+perspectives_52_metadata_yaml:
+  file: "52perspectives_metadata.yaml"
+  role: "index of works / 52 resonance fragments"
+  idea: "52 perspectives = 52 weeks = 52 resonance fragments"
+  stable_schema:
+    project:
+      title: "52 Perspectives of Resonance"
+      year: 2025
+      framework: "CoPhelia³"
+    metadata:
+      author: "SoHashiguchi"
+      type:
+        - "poetic research"
+        - "speculative interface"
+        - "narrative archive"
+    perspective_fields:
+      - "id"
+      - "title"
+      - "keywords"
+      - "mood"
+      - "medium"
+      - "status"
+
+recommended_next_step:
+  immediate:
+    - "Publish or revise README.md."
+    - "Enable GitHub Pages if the repository is used as a public-facing portal."
+    - "Write statement.md."
+    - "Expand the perspectives registry to 12–20 entries before completing all 52."
+  visual_direction:
+    - "black background"
+    - "quiet glow"
+    - "museum-like spacing"
+    - "minimal typography"
+  important_balance:
+    preserve:
+      - "poetry"
+      - "mystery"
+      - "emotional resonance"
+    avoid:
+      - "pseudo_scientific_claims"
+      - "ai_deification"
+      - "closed_belief_system"
+
+validation_checklist:
+  frontmatter_required:
+    - "title"
+    - "version"
+    - "date"
+    - "authors"
+    - "type"
+    - "ethics_level"
+    - "sensitivity_scope"
+    - "languages"
+  readme:
+    - "minimal"
+    - "readable"
+    - "no metaphysical claims presented as science"
+  statement:
+    - "600–1200 words"
+    - "calm tone"
+    - "explicit disclaimer"
+  metadata:
+    - "IDs are quoted strings such as \"01\""
+    - "consistent fields"
+    - "expandable schema"
+
+final_note: |
+  For IYQ2025, the project should be translated internationally as:
+  - “Poetic HCI using quantum imagination”
+  - “Aesthetic co-creation interface”
+  - “Human–AI relationship design”
+
+  The word “quantum” should not be presented as a literal scientific assertion
+  unless the claim is supported by valid scientific evidence.
