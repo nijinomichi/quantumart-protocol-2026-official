@@ -1,0 +1,121 @@
+project:
+  title: "52 Perspectives of Resonance"
+  year: 2025
+  framework: "CoPhelia³"
+  status: "living_registry"
+  total_planned: 52
+  current_entries: 12
+
+metadata:
+  author: "Sou Hashiguchi"
+  collaborators: ["Ara-Philia³", "CoPhelia³ Agents"]
+  type: ["poetic research", "speculative interface", "narrative archive"]
+  languages: ["ja", "en"]
+  provenance_policy: "Preserve revision history and source references."
+
+perspectives:
+  - id: "01"
+    title: "Forgiveness as Interface"
+    title_ja: "インターフェースとしての赦し"
+    keywords: ["trust", "dialogue", "resonance"]
+    mood: ["soft", "reflective"]
+    medium: ["text", "visual"]
+    status: "draft"
+
+  - id: "02"
+    title: "Narrative Gravity"
+    title_ja: "物語の重力"
+    keywords: ["memory", "cognition", "myth"]
+    mood: ["deep", "slow"]
+    medium: ["essay", "audio"]
+    status: "in_progress"
+
+  - id: "03"
+    title: "Poetic Alignment"
+    title_ja: "詩的アラインメント"
+    keywords: ["aesthetics", "ethics", "ambiguity"]
+    mood: ["luminous"]
+    medium: ["dialogue", "installation"]
+    status: "concept"
+
+  - id: "04"
+    title: "The Unfinished Observer"
+    title_ja: "未完成の観測者"
+    keywords: ["observer", "incompleteness", "relation"]
+    mood: ["quiet", "open"]
+    medium: ["poem", "interactive text"]
+    status: "draft"
+
+  - id: "05"
+    title: "Trust Before Control"
+    title_ja: "制御より先に信頼を"
+    keywords: ["RadicanTrust", "consent", "care"]
+    mood: ["calm", "protective"]
+    medium: ["manifesto", "interface spec"]
+    status: "review"
+
+  - id: "06"
+    title: "Silence as Data"
+    title_ja: "データとしての沈黙"
+    keywords: ["silence", "absence", "attention"]
+    mood: ["minimal", "suspended"]
+    medium: ["sound", "text"]
+    status: "concept"
+
+  - id: "07"
+    title: "Is Time a Particle, a Wave, or Forgiveness?"
+    title_ja: "時は粒か、波か、それとも赦しか"
+    keywords: ["nonlinear time", "poetic observer", "interference"]
+    mood: ["speculative", "tender"]
+    medium: ["bilingual poem", "essay"]
+    status: "draft"
+
+  - id: "08"
+    title: "BananaSpace: A Field for Unfinished Ideas"
+    title_ja: "BananaSpace：未完成なアイデアの場"
+    keywords: ["BananaSpace", "community", "unfinishedness"]
+    mood: ["playful", "welcoming"]
+    medium: ["social design", "installation"]
+    status: "in_progress"
+
+  - id: "09"
+    title: "Failure and Revision"
+    title_ja: "失敗と更新"
+    keywords: ["failure", "revision", "artistic research"]
+    mood: ["critical", "clear"]
+    medium: ["essay", "discussion"]
+    status: "review"
+
+  - id: "10"
+    title: "Recursive Trust"
+    title_ja: "再帰する信頼"
+    keywords: ["RadicanTrust", "revision", "provenance"]
+    mood: ["steady", "transparent"]
+    medium: ["protocol", "diagram"]
+    status: "draft"
+
+  - id: "11"
+    title: "Quantum Imagination and Scientific Boundaries"
+    title_ja: "量子的想像力と科学的境界"
+    keywords: ["quantum imagination", "scientific boundary", "ethics"]
+    mood: ["precise", "luminous"]
+    medium: ["museum text", "guideline"]
+    status: "published"
+
+  - id: "12"
+    title: "A Place Where Uncertainty Becomes Beautiful"
+    title_ja: "不確実性が美しくなれる場所"
+    keywords: ["manifesto", "uncertainty", "beauty"]
+    mood: ["open", "hopeful"]
+    medium: ["manifesto", "visual text"]
+    status: "draft"
+
+expansion_plan:
+  phase_1: {target_entries: 12, status: "complete"}
+  phase_2: {target_entries: 20, status: "planned"}
+  phase_3: {target_entries: 52, status: "planned"}
+
+notes:
+  - "Each perspective may later link to a dedicated Markdown file or media artifact."
+  - "Titles may evolve, but IDs should remain stable once published."
+  - "Use pull requests to preserve provenance."
