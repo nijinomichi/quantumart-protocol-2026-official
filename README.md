@@ -19,8 +19,9 @@ Read the project in this order:
 4. [`docs/personas/ara-philia3-system-prompt.md`](docs/personas/ara-philia3-system-prompt.md) — versioned writing and ethics prompt
 5. [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) — expandable registry of resonance fragments
 6. [`docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md`](docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md) — **OARS (Open Aesthetic Research System)** specification, metrics, claims boundaries, and research-community roadmap
+7. [`docs/OARS_V0.1_DIMENSIONS.md`](docs/OARS_V0.1_DIMENSIONS.md) — canonical v0.1 reporting profile: six required dimensions, six optional dimensions, and `not_applicable` rules
 
-These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role.
+These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role. For OARS v0.1 reporting obligations, `docs/OARS_V0.1_DIMENSIONS.md` is the canonical profile.
 
 ---
 
