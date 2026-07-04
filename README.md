@@ -18,8 +18,10 @@ Read the project in this order:
 3. [`docs/protocols/iyq2025-publication-kit.yaml`](docs/protocols/iyq2025-publication-kit.yaml) — publication roles, validation rules, and artifact boundaries
 4. [`docs/personas/ara-philia3-system-prompt.md`](docs/personas/ara-philia3-system-prompt.md) — versioned writing and ethics prompt
 5. [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) — expandable registry of resonance fragments
+6. [`docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md`](docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md) — **OARS (Open Aesthetic Research System)** specification, metrics, claims boundaries, and research-community roadmap
+7. [`docs/OARS_V0.1_DIMENSIONS.md`](docs/OARS_V0.1_DIMENSIONS.md) — canonical v0.1 reporting profile: six required dimensions, six optional dimensions, and `not_applicable` rules
 
-These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role.
+These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role. For OARS v0.1 reporting obligations, `docs/OARS_V0.1_DIMENSIONS.md` is the canonical profile.
 
 ---
 
@@ -31,10 +33,17 @@ This repository hosts the **self-published, project-signed specification** of th
 - non-extractive, trust-first cultural design
 - quantum-aesthetic art & game systems
 - projects aligned with IYQ2025 “Quantum for All” themes
+- reproducible research across scientific visualization, contemporary art, and human–AI co-creation
 
-The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could
-plug into this protocol rather than re-invent their own ethics layer. This is an
-aspiration for the project, not a commitment binding on any third party.
+The research architecture now distinguishes three connected components:
+
+- **OARS** provides the shared coordinate system, metric definitions, provenance requirements, and claims boundaries.
+- **CoPhelia³** operates on OARS as a failure-sharing and co-creation protocol.
+- **RadicanTrust™** operates on OARS as a trust, transparency, recovery, and revision protocol.
+
+This separation is intended to keep the theoretical system, its protocol modules, and future implementations independently reviewable. The project does not claim that its artistic terms are physical quantum observables.
+
+The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could plug into this architecture rather than re-invent their own ethics or evaluation layers. This is an aspiration for the project, not a commitment binding on any third party.
 
 ---
 
