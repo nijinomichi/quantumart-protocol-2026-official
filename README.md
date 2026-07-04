@@ -18,6 +18,7 @@ Read the project in this order:
 3. [`docs/protocols/iyq2025-publication-kit.yaml`](docs/protocols/iyq2025-publication-kit.yaml) — publication roles, validation rules, and artifact boundaries
 4. [`docs/personas/ara-philia3-system-prompt.md`](docs/personas/ara-philia3-system-prompt.md) — versioned writing and ethics prompt
 5. [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) — expandable registry of resonance fragments
+6. [`docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md`](docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md) — roadmap for presenting the project as an open research protocol and connecting it to external research communities
 
 These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role.
 
@@ -31,10 +32,13 @@ This repository hosts the **self-published, project-signed specification** of th
 - non-extractive, trust-first cultural design
 - quantum-aesthetic art & game systems
 - projects aligned with IYQ2025 “Quantum for All” themes
+- reproducible research across scientific visualization, contemporary art, and human–AI co-creation
 
 The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could
 plug into this protocol rather than re-invent their own ethics layer. This is an
 aspiration for the project, not a commitment binding on any third party.
+
+The open research roadmap explicitly separates physical claims, data transformations, artistic interpretations, and public participation. It treats poetic language as a declared interpretive layer rather than as scientific evidence.
 
 ---
 
