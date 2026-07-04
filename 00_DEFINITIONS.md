@@ -6,6 +6,99 @@ Living document
 
 ---
 
+## Canonical Observation Variable — O(t)
+## 正準観測変数 — O(t)
+
+**EN**  
+`O(t)` is the canonical observation-dependent state shared across QuantumArt Protocol implementations.
+
+Its purpose is to synchronize interaction, visual rendering, documentation, memory, and reproducible observation without duplicating business logic.
+
+It may be shared by:
+
+- QuantumArt Protocol
+- BananaBot
+- GitHub Pages
+- Graph Renderer
+- Reference implementations
+
+Properties:
+
+- deterministic
+- append-only
+- observable
+- reproducible
+- implementation-independent
+- canonically owned by the QuantumArt Protocol
+
+Mutation rules:
+
+- `O(t)` changes only after an explicit observation event.
+- Implementations never overwrite historical observations.
+- Derived visual states are projections of `O(t)`, not replacements.
+- Local caches may exist but never redefine `O(t)`.
+
+Valid observation sources include:
+
+- slash commands
+- approved UI interaction
+- versioned datasets
+- verified experiment logs
+
+The following are not observation sources:
+
+- animation
+- CSS
+- UI transitions
+- random visual effects
+- temporary renderer state
+
+**JP**  
+`O(t)` は、QuantumArt Protocolの各実装で共有される、観測に依存した正準状態変数である。
+
+その目的は、業務ロジックを重複させることなく、対話、視覚描画、文書、記憶、再現可能な観測を同期することである。
+
+共有対象には、以下を含み得る。
+
+- QuantumArt Protocol
+- BananaBot
+- GitHub Pages
+- Graph Renderer
+- 参照実装
+
+性質：
+
+- 決定論的
+- 追記専用
+- 観測可能
+- 再現可能
+- 実装非依存
+- 正本所有者はQuantumArt Protocol
+
+変更規則：
+
+- `O(t)` は、明示的な観測イベントの後にのみ変化する。
+- 各実装は、過去の観測を上書きしない。
+- 派生した視覚状態は `O(t)` の投影であり、置き換えではない。
+- ローカルキャッシュは許容されるが、`O(t)` を再定義してはならない。
+
+有効な観測源：
+
+- スラッシュコマンド
+- 承認されたUI操作
+- バージョン管理されたデータセット
+- 検証済み実験ログ
+
+観測源ではないもの：
+
+- アニメーション
+- CSS
+- UIトランジション
+- ランダムな視覚効果
+- 一時的なレンダラー状態
+
+---
+
 ## QuantumArt
 
 **EN**  
