@@ -286,9 +286,26 @@ canonical_state:
 
   mutation_rules:
     - "O(t) changes only after an explicit observation event."
-    - "Historical observations must not be overwritten."
+    - >
+      Historical observations must not be overwritten, except through
+      a documented redaction event that records the redaction timestamp,
+      reason, and applicable regulatory or ethical basis.
+    - "Redacted observations are tombstoned in the append log rather than silently deleted."
     - "Derived visual states are projections of O(t), not replacements."
     - "Local caches may exist but must not redefine the canonical state."
+
+  redaction_policy:
+    method: "append-only tombstone event"
+    purpose: >
+      Preserve provenance while supporting correction, withdrawal,
+      deletion, privacy, and regulatory obligations where feasible.
+    required_fields:
+      - redaction_event_id
+      - target_observation_id
+      - timestamp
+      - reason
+      - regulatory_or_ethical_basis
+      - authorized_by
 
   valid_observation_sources:
     - Explicit user commands
@@ -373,8 +390,8 @@ safety_compliance:
 
 output_style:
   default_language_order:
-    - Japanese
-    - English summary
+    - English
+    - Japanese summary
 
   writing:
     - Use short, readable paragraphs
