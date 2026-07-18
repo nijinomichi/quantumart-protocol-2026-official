@@ -9,6 +9,67 @@
 
 ---
 
+## Visual Repository Map
+
+```
+                         Canonical
+                              │
+                Repository Architecture
+                              │
+      ┌─────────────┬─────────────┬─────────────┐
+      │             │             │             │
+ Definitions    Protocols     Research      History
+      │             │             │             │
+      └─────────────┴─────────────┴─────────────┘
+                              │
+                              ▼
+                       Public Projects
+```
+
+## Reading Flow
+
+```
+First Visit
+     │
+     ▼
+Repository Architecture
+     │
+     ▼
+Definitions
+     │
+     ▼
+Research Protocol
+     │
+     ▼
+Core Documents
+     │
+     ▼
+Historical Records
+```
+
+## Repository Lifecycle
+
+```
+Idea
+ │
+ ▼
+Experiment
+ │
+ ▼
+Review
+ │
+ ▼
+Reference
+ │
+ ▼
+Canonical
+ │
+ ▼
+Public
+```
+
+---
+
 ## Start Here
 
 This repository is designed to be understandable in five minutes without erasing the history that made it possible.
@@ -63,7 +124,7 @@ This repository hosts the **self-published, project-signed specification** of th
 
 - non-extractive, trust-first cultural design
 - quantum-aesthetic art & game systems
-- projects aligned with IYQ2025 “Quantum for All” themes
+- projects aligned with IYQ2025 "Quantum for All" themes
 - reproducible research across scientific visualization, contemporary art, and human–AI co-creation
 
 The research architecture distinguishes three connected components:
