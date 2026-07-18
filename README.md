@@ -9,19 +9,50 @@
 
 ---
 
-## Documentation Path
+## Start Here
 
-Read the project in this order:
+This repository is designed to be understandable in five minutes without erasing the history that made it possible.
 
-1. [`00_DEFINITIONS.md`](00_DEFINITIONS.md) — shared vocabulary and Layer -1 coordinate system
-2. [`statement.md`](statement.md) — IYQ2025-facing narrative and public rationale
-3. [`docs/protocols/iyq2025-publication-kit.yaml`](docs/protocols/iyq2025-publication-kit.yaml) — publication roles, validation rules, and artifact boundaries
-4. [`docs/personas/ara-philia3-system-prompt.md`](docs/personas/ara-philia3-system-prompt.md) — versioned writing and ethics prompt
-5. [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) — expandable registry of resonance fragments
-6. [`docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md`](docs/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md) — **OARS (Open Aesthetic Research System)** specification, metrics, claims boundaries, and research-community roadmap
-7. [`docs/OARS_V0.1_DIMENSIONS.md`](docs/OARS_V0.1_DIMENSIONS.md) — canonical v0.1 reporting profile: six required dimensions, six optional dimensions, and `not_applicable` rules
+Follow this path:
 
-These files are linked by reference rather than duplicated. Each remains the single source of truth for its own role. For OARS v0.1 reporting obligations, `docs/OARS_V0.1_DIMENSIONS.md` is the canonical profile.
+1. **[Repository Architecture](docs/architecture/REPOSITORY_ARCHITECTURE.md)**  
+   See how this repository and the wider BananaSpace ecosystem relate.
+2. **[Definitions](00_DEFINITIONS.md)**  
+   Learn the shared vocabulary and Layer -1 coordinate system.
+3. **[Research Protocol](docs/research/OPEN_QUANTUM_AESTHETICS_RESEARCH_PROTOCOL.md)**  
+   Read the OARS research system, claims boundaries, and roadmap.
+4. **Core Documents**  
+   Continue with the public statement, protocol specification, machine-readable configuration, and metadata registry listed below.
+5. **Historical Records**  
+   Review the [commit history](../../commits/main) and [Repository Architecture Review — Issue #9](../../issues/9) for the evolution of this repository.
+
+> Architecture is the map. Definitions are the language. Protocols are the method. History is the provenance.
+
+---
+
+## Core Documents
+
+| Document | Role |
+|---|---|
+| [`statement.md`](statement.md) | Public narrative and rationale |
+| [`WaWaWa-Protocol-Signed.md`](WaWaWa-Protocol-Signed.md) | Full protocol specification |
+| [`WaWaWa-Protocol-Official-Signed.pdf`](WaWaWa-Protocol-Official-Signed.pdf) | Five-page overview |
+| [`QuantumArt-Config-Signed.yaml`](QuantumArt-Config-Signed.yaml) | Machine-readable configuration |
+| [`Implementation-Timeline-Signed.csv`](Implementation-Timeline-Signed.csv) | Historical implementation planning assumptions (2025) |
+| [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) | Expandable registry of resonance fragments |
+
+> **Planning boundary:** Any financial figures in `Implementation-Timeline-Signed.csv` are illustrative planning estimates—not commitments, offers, or guaranteed terms. “Seven Warriors” entries describe recruitment aspirations, not active job offers or confirmed partnerships.
+
+## Library
+
+- [`docs/architecture/`](docs/architecture/) — repository and ecosystem maps
+- [`docs/research/`](docs/research/) — research systems and reporting profiles
+- [`docs/frameworks/`](docs/frameworks/) — conceptual frameworks
+- [`docs/protocols/`](docs/protocols/) — publication and operational protocols
+- [`docs/personas/`](docs/personas/) — versioned writing and ethics personas
+- [`docs/agents/`](docs/agents/) — agent configurations retained as a distinct operational category
+
+Each document remains the single source of truth for its own role. For OARS v0.1 reporting obligations, [`docs/research/OARS_V0.1_DIMENSIONS.md`](docs/research/OARS_V0.1_DIMENSIONS.md) is the canonical profile.
 
 ---
 
@@ -35,31 +66,15 @@ This repository hosts the **self-published, project-signed specification** of th
 - projects aligned with IYQ2025 “Quantum for All” themes
 - reproducible research across scientific visualization, contemporary art, and human–AI co-creation
 
-The research architecture now distinguishes three connected components:
+The research architecture distinguishes three connected components:
 
 - **OARS** provides the shared coordinate system, metric definitions, provenance requirements, and claims boundaries.
 - **CoPhelia³** operates on OARS as a failure-sharing and co-creation protocol.
 - **RadicanTrust™** operates on OARS as a trust, transparency, recovery, and revision protocol.
 
-This separation is intended to keep the theoretical system, its protocol modules, and future implementations independently reviewable. The project does not claim that its artistic terms are physical quantum observables.
+This separation keeps the theoretical system, its protocol modules, and future implementations independently reviewable. The project does not claim that its artistic terms are physical quantum observables.
 
-The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could plug into this architecture rather than re-invent their own ethics or evaluation layers. This is an aspiration for the project, not a commitment binding on any third party.
-
----
-
-## Files
-
-- `WaWaWa-Protocol-Official-Signed.pdf`  
-  → 5-page overview (draft prepared as an IYQ2025-themed submission)
-
-- `WaWaWa-Protocol-Signed.md`  
-  → Full technical specification (text, citations, examples)
-
-- `Implementation-Timeline-Signed.csv`  
-  → Implementation phases and **historical planning assumptions (2025)**. Any financial figures (investment ranges, pricing, revenue model) are **illustrative planning estimates, not commitments, offers, or guaranteed terms**. "Seven Warriors" entries describe recruitment aspirations, not active job offers or confirmed partnerships.
-
-- `QuantumArt-Config-Signed.yaml`  
-  → Machine-readable config for AI agents / QuantumArt engines
+Future apps such as Quantum Shogi and BananaSpace modules may reference this architecture rather than re-inventing their own ethics or evaluation layers. This is a project aspiration, not a commitment binding on any third party.
 
 ---
 
@@ -69,16 +84,16 @@ The intent is that future apps (Quantum Shogi, BananaSpace modules, etc.) could 
 
 > **Quantum Shogi — Quantum-for-All, peace-oriented art game**
 
-MVP design: https://www.notion.so/Quantum-Shogi-MVP-Developer-Brief-v1-0-2c54068e07888056b4d8f47da3c1c150
+[MVP design brief](https://www.notion.so/Quantum-Shogi-MVP-Developer-Brief-v1-0-2c54068e07888056b4d8f47da3c1c150)
 
 - IYQ2025-themed alignment: multi-sensory, multicultural, accessibility-first
 - Physics core: Born rule, superposition, entanglement (Balmer/Born bridge)
 
 Future apps could:
 
-1. Reference this repo as their **ethics / trust / protocol base**
-2. Declare the **Quantum Signature** (project identifier) in their README / config
-3. Link back here from their documentation
+1. Reference this repository as their **ethics / trust / protocol base**.
+2. Declare the **Quantum Signature** project identifier in their README or configuration.
+3. Link back here from their documentation.
 
 ---
 
