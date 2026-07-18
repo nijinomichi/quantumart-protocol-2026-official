@@ -124,7 +124,7 @@ This repository hosts the **self-published, project-signed specification** of th
 
 - non-extractive, trust-first cultural design
 - quantum-aesthetic art & game systems
-- projects aligned with IYQ2025 "Quantum for All" themes
+- projects aligned with IYQ2025 “Quantum for All” themes
 - reproducible research across scientific visualization, contemporary art, and human–AI co-creation
 
 The research architecture distinguishes three connected components:
