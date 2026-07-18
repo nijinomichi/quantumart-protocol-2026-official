@@ -38,8 +38,10 @@ Follow this path:
 | [`WaWaWa-Protocol-Signed.md`](WaWaWa-Protocol-Signed.md) | Full protocol specification |
 | [`WaWaWa-Protocol-Official-Signed.pdf`](WaWaWa-Protocol-Official-Signed.pdf) | Five-page overview |
 | [`QuantumArt-Config-Signed.yaml`](QuantumArt-Config-Signed.yaml) | Machine-readable configuration |
-| [`Implementation-Timeline-Signed.csv`](Implementation-Timeline-Signed.csv) | Historical implementation planning assumptions |
+| [`Implementation-Timeline-Signed.csv`](Implementation-Timeline-Signed.csv) | Historical implementation planning assumptions (2025) |
 | [`52perspectives_metadata.yaml`](52perspectives_metadata.yaml) | Expandable registry of resonance fragments |
+
+> **Planning boundary:** Any financial figures in `Implementation-Timeline-Signed.csv` are illustrative planning estimates—not commitments, offers, or guaranteed terms. “Seven Warriors” entries describe recruitment aspirations, not active job offers or confirmed partnerships.
 
 ## Library
 
@@ -96,6 +98,8 @@ Future apps could:
 ---
 
 ## How to Cite
+
+When using or extending this protocol, please cite as:
 
 > **WaWaWa Resonance Protocol v1.0 (draft)**  
 > Sou Hashiguchi (2025).  
