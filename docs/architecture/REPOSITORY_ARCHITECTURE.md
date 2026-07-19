@@ -91,6 +91,27 @@ Responsibilities should remain explicit.
 
 ---
 
+# Repository Lifecycle
+
+Documents do not become canonical merely by being published.
+They move through observation, experiment, review, and reference
+before canonical status is assigned.
+
+| Stage | Meaning | Typical Artifact |
+|-------|---------|------------------|
+| Idea | An unverified question or concept | proposal, note |
+| Experiment | Prototyping and observation | experimental record |
+| Review | Human, technical, and boundary verification | PR, review log |
+| Reference | Verified material ready for reuse | reference document |
+| Canonical | The current authoritative source | protocol, definitions |
+| Public | The guided entry point for external readers | README, portal, release |
+
+Promotion to Canonical requires that the document has been observed,
+experimented upon, reviewed, and established as a reusable reference.
+Public visibility is a consequence of canonical status, not its cause.
+
+---
+
 # Evolution Rules
 
 When a new repository is created, its primary architectural role should be
