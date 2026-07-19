@@ -9,6 +9,67 @@
 
 ---
 
+## Visual Repository Map
+
+```
+                         Canonical
+                              │
+                Repository Architecture
+                              │
+      ┌─────────────┬─────────────┬─────────────┐
+      │             │             │             │
+ Definitions    Protocols     Research      History
+      │             │             │             │
+      └─────────────┴─────────────┴─────────────┘
+                              │
+                              ▼
+                       Public Projects
+```
+
+## Reading Flow
+
+```
+First Visit
+     │
+     ▼
+Repository Architecture
+     │
+     ▼
+Definitions
+     │
+     ▼
+Research Protocol
+     │
+     ▼
+Core Documents
+     │
+     ▼
+Historical Records
+```
+
+## Repository Lifecycle
+
+```
+Idea
+ │
+ ▼
+Experiment
+ │
+ ▼
+Review
+ │
+ ▼
+Reference
+ │
+ ▼
+Canonical
+ │
+ ▼
+Public
+```
+
+---
+
 ## Start Here
 
 This repository is designed to be understandable in five minutes without erasing the history that made it possible.
