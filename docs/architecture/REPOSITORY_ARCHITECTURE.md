@@ -52,6 +52,7 @@ The architecture follows several long-term principles.
 | Role | Repository | Primary Responsibility |
 |------|------------|------------------------|
 | Canonical Knowledge | quantumart-protocol-2026-official | Definitions, boundaries, research documents, architecture |
+| Social Implementation Archive | WaWaWa-Resonance-Protocol | Social implementation experiments in forgiveness, trust, and co-creation |
 | Incident Origin | QuantumTrustChaosPrompt (legacy) | Historical origin of the long-path incident |
 | Repair Reference | QuantumTrustChaosPrompt-v2 | Verified migration reference with continuous validation |
 | Incident Reference | BananaMoon-QuantumTrust-Review | Investigation, diagnosis, and repair planning |
