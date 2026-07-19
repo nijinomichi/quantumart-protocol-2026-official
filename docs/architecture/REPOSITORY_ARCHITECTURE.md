@@ -108,7 +108,8 @@ before canonical status is assigned.
 
 Promotion to Canonical requires that the document has been observed,
 experimented upon, reviewed, and established as a reusable reference.
-Public visibility is a consequence of canonical status, not its cause.
+Designation as an authoritative public entry point is a consequence
+of canonical status, not its cause.
 
 ---
 
